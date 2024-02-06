@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="ass1.css">
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eveniet sapiente totam amet. Placeat, reiciendis assumenda. Doloremque, mollitia. Illo, similique deleniti repellendus sapiente pariatur architecto porro facilis veniam qui obcaecati reiciendis voluptate nostrum praesentium fugit facere blanditiis est dolores laborum, odit quae dolorem, sed alias. Atque eum voluptate debitis maiores distinctio! Ut distinctio ipsum numquam aut vero voluptate a culpa? Porro totam aliquam praesentium. Minima perferendis adipisci quaerat, officia atque inventore tenetur quae fugit magnam obcaecati. Atque saepe ipsa fugiat placeat sed consectetur ratione libero harum cum! Cupiditate, officia! Debitis unde, dolore velit impedit inventore reprehenderit consequatur tempore dicta culpa. Ipsum, architecto, est nam corrupti doloribus quibusdam recusandae dolor molestiae sapiente, mollitia eaque quia voluptatum! Tempora debitis facere maxime commodi ratione adipisci? Sit maiores corrupti eum? Mollitia odit quas ipsa, dolores aperiam dignissimos nemo suscipit, id ullam molestias hic nostrum fugit architecto similique debitis eum tempora qui magni alias quos, molestiae perspiciatis quia. Repudiandae necessitatibus eligendi maiores architecto repellat aperiam velit dicta tempora porro neque suscipit rerum voluptatibus officiis cum molestiae quam veniam, explicabo ab libero nobis. Quisquam repellendus a veniam pariatur laborum enim, quam tempore corrupti quae corporis, facere fugit non suscipit. Veritatis fugiat repudiandae minus illum neque quasi amet aliquid ipsum facere possimus? Natus earum optio beatae similique eveniet voluptate est minima, possimus in alias, mollitia rerum at repellendus culpa vel doloribus facilis, consequuntur eum iure ab qui error! Iusto deleniti neque distinctio corrupti cum, accusantium eius sint vero asperiores perferendis earum voluptas eaque obcaecati at amet optio harum placeat saepe quis non magni laborum porro nam facere. Voluptatum, harum dolore porro aliquam ut, pariatur odio natus ipsam ab recusandae facilis temporibus laborum eum excepturi eos omnis? Temporibus ut accusantium laboriosam! Perspiciatis dignissimos aperiam commodi quasi ex qui temporibus officiis vero voluptatum consequuntur optio saepe iusto, nihil, iure nesciunt, laborum corporis numquam non sapiente. Eligendi quam voluptate fugiat fugit similique ex quaerat deserunt est et aperiam exercitationem autem, commodi provident reiciendis nisi possimus nam vero non odio accusantium minima culpa! Sunt repudiandae aliquam nisi dicta nesciunt? Tempora fugiat laudantium nostrum vero, cumque aut sit voluptatibus exercitationem. Sunt quisquam nesciunt nemo, modi nulla corporis mollitia pariatur qui maxime dicta facere vel ratione esse consequatur iure incidunt itaque dolores labore accusantium blanditiis excepturi! Sunt odio nisi ex doloremque, deleniti beatae nam aspernatur ipsa quam neque doloribus necessitatibus laborum quisquam, placeat eveniet ratione esse mollitia assumenda temporibus id dolores fugit. Reiciendis assumenda, illum voluptatum repudiandae eius esse. Doloribus voluptates at veritatis fugit sint, enim, voluptatem dolores qui, rem iste quae officiis officia vero laudantium cum eum. Reiciendis hic itaque ducimus numquam adipisci quia accusantium cupiditate optio eligendi! Necessitatibus atque quas quasi obcaecati minus tenetur officia, reiciendis blanditiis quis, sit, a distinctio temporibus ex ipsum! Aperiam possimus iure voluptate nisi distinctio, consectetur repellendus aliquid nam incidunt autem sit eos vero optio ipsam laudantium ea vel inventore aspernatur voluptatibus minus voluptas, quod consequuntur earum. Ipsa dolore distinctio, consectetur aut perferendis explicabo quas voluptatibus sed cum eum doloribus ducimus exercitationem laudantium eaque repudiandae veniam?
+  </p>
+  <style>
+    #likeButton {
+      cursor: pointer;
+      color: blue;
+    }
+  </style>
+  <title>Like Button</title>
+</head>
+<body>
+  <body class="light-mode">
+    <a href="https://github.com/Aryan3it" target="_blank" rel="noopener noreferrer">
+      <img src="github_logo.png" alt="GitHub Logo" width="40" height="40"></a>
+      <a href="mailto:aryan.chaudhary@research.iiit.ac.in">
+      <img src="mail.jpeg" alt="GitHub Logo" width="40" height="40"></a>
+      <button class="mode-toggle" onclick="toggleMode()">Toggle Mode</button>
+      <p id="like-count"></p>
+      <script src="script.js"></script>
+  </body>
+  <button id="like-button" >Like</button>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const likeButton = document.getElementById("like-button");
+    const likeCount = document.getElementById("like-count");
+
+    let currentLikes = parseInt(localStorage.getItem("likes")) || 0;
+    likeCount.textContent = currentLikes;
+    likeButton.addEventListener("click", function () {
+        currentLikes++;
+        likeCount.textContent = currentLikes;
+        localStorage.setItem("likes", currentLikes);
+    });
+});
+    let liked = false;
+    let count=0;
+    function toggleLike() {
+      const likeButton = document.getElementById("likeButton");
+
+      liked = !liked;
+
+      if (liked) {
+        count++;
+        likeButton.innerHTML = "Unlike";
+        likeButton.style.color = "red"; 
+      } else {
+        count--;
+        likeButton.innerHTML = "Like";
+        likeButton.style.color = "blue"; 
+      }
+    }
+  </script>
+
+</body>
+</html>

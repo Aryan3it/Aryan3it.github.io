@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  </style>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+          const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+          smoothScrollLinks.forEach(link => {
+            link.addEventListener('click', smoothScroll);
+          });
+      
+          function smoothScroll(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+      
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+              });
+            }
+          }
+        });
+      </script>
+      
+<link rel="stylesheet" href="ass1.css">
+
+<div class="topnav">
+  
+    <a href="#Home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#Edu">Educational Background</a>
+    <a href="#Achievements">Achievements</a>
+    <a href="#skills">Skills</a>
+    <a href="#Blogs">Blog</a>
+    <a href="#resume">Resume</a>
+  </div> 
+</head>
+<body class="light-mode">
+  <a href="https://github.com/Aryan3it" target="_blank" rel="noopener noreferrer">
+    <img src="github_logo.png" alt="GitHub Logo" width="40" height="40"></a>
+    <a href="mailto:aryan.chaudhary@research.iiit.ac.in">
+    <img src="mail.jpeg" alt="GitHub Logo" width="40" height="40"></a>
+    <button class="mode-toggle" onclick="toggleMode()">Toggle Mode</button>
+    <script src="script.js"></script>
+</body>
+
+<h2>
+    Hello There
+    
+</h2>
+<p>
+  I am thrilled to have you here, exploring the virtual landscape I've curated just for you. Whether you're a friend, a curious mind, or a fellow enthusiast, this space is designed to share a glimpse into who I am and what I love.
+<h2 id = "about">
+    About Me
+</h2>
+<div class="container">
+<img src="file.jpeg" alt="Profile Pic"  width="500px" class="image"> 
+
+<p>
+Hello my name is Aryan chaudhary.I was born and brought up in Meerut Uttar pradesh,currently pursuing CLD from IIITH
+</p>
+</div>
+<h2 id =Edu>
+    Educational qualifications
+</h2>
+<p>
+10th from ICSE
+12th from CBSE
+CLD from IIITH </p>
+<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur animi expedita quos dolores fugit aperiam! Unde numquam eius quisquam, corporis voluptate deserunt vitae aliquid animi adipisci corrupti quibusdam exercitationem aspernatur voluptatum iste expedita, totam, impedit dolor ullam atque placeat saepe libero nam! Neque nostrum cumque sequi aperiam quidem, placeat quis! Reiciendis doloremque sed eos vel sapiente illum autem mollitia tempora inventore incidunt odit temporibus debitis, obcaecati nostrum magni? Quaerat reprehenderit nostrum nihil, velit doloribus a repellendus commodi voluptates, distinctio quos excepturi magni iure soluta fugiat vel ipsa laboriosam. Incidunt, molestiae? Perferendis libero eius porro obcaecati quis voluptate, hic qui neque quo delectus, ipsum eum, voluptatem reprehenderit rem. Iure quisquam eveniet neque atque dolore, illo excepturi magni asperiores, porro tempore quia iste. Deserunt ea iste nemo praesentium? Culpa optio quam, cupiditate veniam repellat pariatur iure et qui aut doloribus quis fugit nesciunt, iste dignissimos excepturi accusamus porro autem. Dolore sunt aliquid nisi praesentium rerum id ipsum optio beatae! Quaerat, quasi suscipit. Soluta pariatur consequatur magnam inventore delectus perferendis laboriosam saepe doloremque sapiente. A temporibus libero expedita ex obcaecati magnam earum, deserunt quas amet praesentium adipisci fuga maiores minima enim. Possimus repellendus labore voluptas commodi, sapiente optio sint praesentium sequi obcaecati molestias veniam mollitia cupiditate et alias quos quam quaerat error ipsum laudantium. At delectus, aperiam sed assumenda animi doloremque alias praesentium ipsam magnam, exercitationem eligendi, possimus quod iusto repudiandae accusantium. Alias aspernatur nemo consectetur accusantium labore assumenda. Minima, nemo recusandae saepe consequuntur deleniti eaque ipsam officia mollitia est. Mollitia, officiis alias sint quo earum similique impedit officia velit excepturi magni asperiores a? Placeat ea cum veritatis voluptas expedita minima necessitatibus eligendi illo quos unde sunt numquam tempore laboriosam, accusantium qui enim quisquam, dolore maiores quo velit. Illum culpa eaque earum corrupti, quibusdam accusantium, reprehenderit id rerum accusamus harum ex non facilis a vero vitae suscipit magni eius adipisci aliquid sapiente voluptate iusto? Ratione, nisi magni corporis laudantium quae accusantium at nostrum itaque consequatur dolorem culpa rerum, iste odio laboriosam perspiciatis debitis voluptate repellendus inventore molestias voluptas temporibus minima modi. Laboriosam a debitis perspiciatis praesentium illo sapiente placeat consequuntur totam blanditiis soluta ut quae ea, excepturi explicabo dolore quibusdam vel at? Voluptatibus facere recusandae itaque delectus voluptatum aperiam similique. Eum aliquid aperiam perspiciatis optio cum nisi commodi iure tempora dolor. Consequuntur, ipsa sapiente. Perspiciatis praesentium sit veniam vel consectetur repellat accusantium quia, sunt sapiente assumenda ducimus natus ullam enim ratione vitae esse sequi voluptates hic ipsa eos facilis qui sed. Asperiores ipsam tempora illum architecto? Inventore, incidunt vitae omnis culpa soluta autem excepturi voluptate, porro ipsum, nobis maxime quos quasi nulla quisquam praesentium vel mollitia neque possimus repellendus reiciendis? Repellendus a illo at quibusdam est deleniti perferendis culpa magnam quae perspiciatis debitis, quasi ratione dicta inventore id exercitationem sit provident sunt vel dolorem molestiae! Excepturi tempora obcaecati aliquam laudantium corporis cupiditate aliquid eos, dolor sit in ipsa! Quam debitis itaque, ad minus maiores mollitia architecto error alias. Fugiat beatae architecto blanditiis dignissimos, maxime ea nulla quo officia. Explicabo eius atque impedit quo?
+</p>
+<h2 id="Achievements">
+Achievements
+</h2>
+<p>Error  404 not found
+  here is some placeholder text
+</p>
+<p>
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur vero qui accusamus! Voluptate cumque repellat cupiditate mollitia maiores unde similique numquam rem facere consequuntur! Illum delectus repellendus provident optio ipsum aperiam ducimus similique enim possimus dignissimos, beatae ipsam, quibusdam iure quas in, tempora praesentium voluptatibus aspernatur! Dolores minima molestiae tenetur non nihil voluptate a cum? Quasi officiis itaque alias a! Officiis, voluptatem ea! Deserunt architecto dolores ducimus non, ab odit cumque quidem nobis officia aliquam doloremque impedit laudantium facere totam voluptas. Consequuntur aut hic ad rerum eius. Voluptate aspernatur distinctio perferendis esse doloremque, sunt fugit, facere odit ratione obcaecati mollitia? Eaque perspiciatis aspernatur sunt sit inventore, atque, enim minima rem illo in est. Ratione, officiis quasi. Repellat, saepe nobis ad odio similique quaerat. Praesentium totam iure, ipsum corporis voluptates assumenda mollitia reiciendis hic quae eveniet blanditiis voluptate molestias dolores dolorum ratione voluptatum amet! Nisi numquam, aspernatur dolorem cum dolore, minus laudantium excepturi, eligendi voluptatibus saepe architecto autem molestiae aperiam culpa ut provident in odio. Dolores dolorum inventore eum dignissimos quod magni laudantium corrupti ut earum itaque qui deleniti, vitae obcaecati laboriosam temporibus harum quae. Corporis, ea est praesentium odit exercitationem molestias consequatur aliquid incidunt deserunt maiores quis eveniet odio velit quia alias perferendis magnam perspiciatis reprehenderit temporibus dolor eligendi dolorem! Laborum deleniti amet harum soluta quisquam eveniet accusantium! Velit necessitatibus, nostrum fugit soluta dolore magni minus blanditiis itaque distinctio eos cumque similique rem perferendis consequatur nemo quis. Totam nam ratione, modi alias voluptate exercitationem distinctio repellendus impedit magnam quibusdam deserunt, eius placeat eum dicta harum reiciendis quod quidem voluptatibus asperiores veniam dignissimos aperiam, odit ad perferendis. Ratione aliquid adipisci eos facilis nemo? Id unde omnis consequatur sit, autem magni voluptates delectus? Id adipisci fugiat sint voluptate maxime, voluptas, ducimus perferendis ullam eaque possimus dolor repudiandae earum qui quod distinctio eveniet illum! Blanditiis cumque doloribus facilis ex? Beatae molestias sit amet quae consectetur non magni dignissimos repellendus odio recusandae reiciendis molestiae ab repellat natus iure quas, modi dolor accusantium eveniet quam iusto aspernatur possimus? Assumenda saepe, cumque veritatis delectus fuga voluptatibus ipsa pariatur qui odit quis nulla! Molestiae obcaecati velit vel magnam laudantium beatae ea facere dolores, nostrum aspernatur assumenda mollitia dicta officiis unde, sint temporibus saepe id explicabo. Sapiente magnam, distinctio accusantium ipsa maiores, dicta inventore obcaecati, totam tempore repellat quibusdam sed facere voluptate autem? Eaque a ipsum doloremque cupiditate adipisci inventore veritatis id placeat consequatur esse asperiores reprehenderit ratione, fugiat ipsa molestias magni porro! Quasi sapiente, et fuga totam, provident voluptatem ratione quisquam voluptatibus sint explicabo iure nemo perspiciatis beatae vitae exercitationem. Sint quas temporibus corporis fugiat, amet aliquam asperiores repellat qui iste exercitationem consequatur assumenda necessitatibus placeat nihil iure dicta quae quam sed hic? Quam numquam ex illum ipsam, accusamus culpa expedita explicabo, optio quos possimus minus praesentium enim facere voluptatum architecto quia iste eaque perferendis repellat omnis labore sunt animi nobis reiciendis? Id placeat dolorem eius omnis corporis, veritatis cum obcaecati ducimus. Enim obcaecati aspernatur cum, illum magni numquam quidem voluptates veniam omnis minima totam, aperiam aut?
+
+</p>
+<h2 id="skills">
+Skills
+</h2>
+<p>
+  Error  404 not found
+  here is some placeholder text
+</p>
+<p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur vero qui accusamus! Voluptate cumque repellat cupiditate mollitia maiores unde similique numquam rem facere consequuntur! Illum delectus repellendus provident optio ipsum aperiam ducimus similique enim possimus dignissimos, beatae ipsam, quibusdam iure quas in, tempora praesentium voluptatibus aspernatur! Dolores minima molestiae tenetur non nihil voluptate a cum? Quasi officiis itaque alias a! Officiis, voluptatem ea! Deserunt architecto dolores ducimus non, ab odit cumque quidem nobis officia aliquam doloremque impedit laudantium facere totam voluptas. Consequuntur aut hic ad rerum eius. Voluptate aspernatur distinctio perferendis esse doloremque, sunt fugit, facere odit ratione obcaecati mollitia? Eaque perspiciatis aspernatur sunt sit inventore, atque, enim minima rem illo in est. Ratione, officiis quasi. Repellat, saepe nobis ad odio similique quaerat. Praesentium totam iure, ipsum corporis voluptates assumenda mollitia reiciendis hic quae eveniet blanditiis voluptate molestias dolores dolorum ratione voluptatum amet! Nisi numquam, aspernatur dolorem cum dolore, minus laudantium excepturi, eligendi voluptatibus saepe architecto autem molestiae aperiam culpa ut provident in odio. Dolores dolorum inventore eum dignissimos quod magni laudantium corrupti ut earum itaque qui deleniti, vitae obcaecati laboriosam temporibus harum quae. Corporis, ea est praesentium odit exercitationem molestias consequatur aliquid incidunt deserunt maiores quis eveniet odio velit quia alias perferendis magnam perspiciatis reprehenderit temporibus dolor eligendi dolorem! Laborum deleniti amet harum soluta quisquam eveniet accusantium! Velit necessitatibus, nostrum fugit soluta dolore magni minus blanditiis itaque distinctio eos cumque similique rem perferendis consequatur nemo quis. Totam nam ratione, modi alias voluptate exercitationem distinctio repellendus impedit magnam quibusdam deserunt, eius placeat eum dicta harum reiciendis quod quidem voluptatibus asperiores veniam dignissimos aperiam, odit ad perferendis. Ratione aliquid adipisci eos facilis nemo? Id unde omnis consequatur sit, autem magni voluptates delectus? Id adipisci fugiat sint voluptate maxime, voluptas, ducimus perferendis ullam eaque possimus dolor repudiandae earum qui quod distinctio eveniet illum! Blanditiis cumque doloribus facilis ex? Beatae molestias sit amet quae consectetur non magni dignissimos repellendus odio recusandae reiciendis molestiae ab repellat natus iure quas, modi dolor accusantium eveniet quam iusto aspernatur possimus? Assumenda saepe, cumque veritatis delectus fuga voluptatibus ipsa pariatur qui odit quis nulla! Molestiae obcaecati velit vel magnam laudantium beatae ea facere dolores, nostrum aspernatur assumenda mollitia dicta officiis unde, sint temporibus saepe id explicabo. Sapiente magnam, distinctio accusantium ipsa maiores, dicta inventore obcaecati, totam tempore repellat quibusdam sed facere voluptate autem? Eaque a ipsum doloremque cupiditate adipisci inventore veritatis id placeat consequatur esse asperiores reprehenderit ratione, fugiat ipsa molestias magni porro! Quasi sapiente, et fuga totam, provident voluptatem ratione quisquam voluptatibus sint explicabo iure nemo perspiciatis beatae vitae exercitationem. Sint quas temporibus corporis fugiat, amet aliquam asperiores repellat qui iste exercitationem consequatur assumenda necessitatibus placeat nihil iure dicta quae quam sed hic? Quam numquam ex illum ipsam, accusamus culpa expedita explicabo, optio quos possimus minus praesentium enim facere voluptatum architecto quia iste eaque perferendis repellat omnis labore sunt animi nobis reiciendis? Id placeat dolorem eius omnis corporis, veritatis cum obcaecati ducimus. Enim obcaecati aspernatur cum, illum magni numquam quidem voluptates veniam omnis minima totam, aperiam aut?
+
+</p>
+<h2 id="Blogs">
+    Blogs
+    <h3 ><a href="blog1.html"target="_blank">Blog 1</a></h3>
+    <h3 ><a href="blog1.html"target="_blank">Blog 2</a></h3>
+</h2>
+<h2 id ="resume">Resume</h2>
+<p>
+  <a href="/home/replicant/Downloads/Assignment1.pdf" download="Assignment1.pdf">Resume</a>
+</p>
+</html>
